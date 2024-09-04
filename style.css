@@ -54,9 +54,6 @@ header {
         display: none;
         flex-direction: column;
         width: 100%;
-        position: absolute;
-        top: 90px; 
-        left: 0;
         background-color: #2100b5;
         text-align: center; 
     }
