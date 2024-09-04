@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2100b5;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+
+.nav-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-ul li {
+    margin: 0 10px;
+}
+
+.nav-ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hide the checkbox and label */
+.checkbox {
+    display: none;
+}
+
+/* Menu  label */
+.label {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive styles  show burger menu*/
+@media (max-width: 600px) {
+    .nav-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 90px; 
+        left: 0;
+        background-color: #2100b5;
+        text-align: center; 
+    }
+
+    .nav-ul li {
+        margin: 10px 0;
+    }
+
+    .label {
+        display: block;
+    }
+
+    .checkbox:checked ~ .nav-ul {
+        display: flex;
+    }
+
+
+}
