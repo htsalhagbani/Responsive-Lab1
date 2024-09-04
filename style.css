@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f7;
+
 }
 
 header {
@@ -33,12 +35,10 @@ header {
     text-decoration: none;
 }
 
-/* Hide the checkbox and label */
 .checkbox {
     display: none;
 }
 
-/* Menu  label */
 .label {
     display: none;
     background: none;
@@ -48,7 +48,7 @@ header {
     cursor: pointer;
 }
 
-/* Responsive styles  show burger menu*/
+/* burger menu*/
 @media (max-width: 600px) {
     .nav-ul {
         display: none;
